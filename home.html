@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="ins.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="insta.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        /*for load animation*/
+         body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+ 
+            100% {
+                opacity: 1;
+            }
+        }
+        *{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    
+    <header id="head">
+        
+        <!-- Image and text of logo -->
+      <nav class="navbar sticky-top ">
+            <a class="navbar-brand " href="#head" style="text-decoration: none;
+            font-style: italic; color: white; ">
+            <img src="ins.png" width="30" height="30" class="d-inline-block align-top " alt="">&nbsp; Instagram
+              
+                </a>
+                <!-- log in button -->
+                <nav class="navbar">
+                    <form  action="index.html">
+                      
+                      <button class="btn btn-sm btn-outline-danger" >log out</button>
+                    </form>
+                  </nav> 
+       </nav>
+       
+    </header>
+    <!-- about section -->
+    <section>
+        <div class="card " style="width: 50%; height: 30%; background-color: black">
+            <div class="card-header position-fixed-left m-4" style="width: 70px;height: 70px; border-radius: 55%;border: 2px solid rgb(231, 61, 194); padding:2px" >
+                <a href="story.html"> <img src="team1.jpg" class="img-fluid rounded-circle" ></a>
+                <div style="width :150px; height: 10px; ">Leo</div>
+            </div>
+            <div class="card-body">
+                bio<br>
+                likes songs<br>
+                likes to travel
+            </div>
+        </div>
+    </section>
+    <!-- button -->
+    <section class="sel-btn">
+        <div class="btn justify-content-center " style="width: 100%; display: inline-flex; padding: 20px;"> 
+            <a class="btn btn-outline-light " style="border-top-left-radius: 44%;"  href="feeds.html">feeds</a>
+            <a class="btn btn-outline-light active" style="  border-top-right-radius: 44%" href="home.html">home</a>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="foot">
+        <div class="footer">
+            <center>&copycopyright</center>
+            <center>dev.adith2003@gmail</center>    
+        </div>
+    </footer>
+</body>
+</html>
