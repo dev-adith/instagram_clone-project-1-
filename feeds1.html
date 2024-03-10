@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="ins.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="insta.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        /*for load animation*/
+         body {
+            animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode:both;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+ 
+            100% {
+                opacity: 1;
+            }
+        }
+        *{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script type="text/javascript">
+        //to prevent back and front page load
+        window.history.forward();
+       function prevent(){
+        window.history.forward();
+       }
+     
+    </script>
+    <header id="head">
+        
+        <!-- Image and text of logo -->
+      <nav class="navbar sticky-top ">
+            <a class="navbar-brand " href="#head" style="text-decoration: none;
+            font-style: italic; color: white; ">
+            <img src="ins.png" width="30" height="30" class="d-inline-block align-top " alt="">&nbsp; Instagram
+              
+                </a>
+                <!-- log in button -->
+                <nav class="navbar">
+                    <form  action="index.html">
+                      
+                      <button class="btn btn-sm btn-outline-danger" >log out</button>
+                    </form>
+                  </nav> 
+       </nav>
+       
+    </header>
+    <!--section for story bar-->
+    <section>
+    
+
+         <div class="container m-5 p-3 col-12 justify-content-center" style="background-color: black;" >
+            
+            <div class="shadow-lg p-4 mb-5  rounded col-12 " style="min-width:100%; background-color: black;" >
+                <div class="carousel d-md-inline-flex " style=" background-color: black;">
+                 
+
+                 <div class="position-relative p-2">
+                    <div class="position-relative me-2 bg-dark" style="width: 50px; height: 50px;border-radius: 50%;border: 2px solid rgb(231, 61, 194);padding: 4px;">
+                        <a href="addstory.html">  <img src="ins.png" class="img-fluid rounded-circle"></a>
+                          <div class="text-small m-2">+story</div>
+                    </div>
+                 </div>  
+                </div>
+                
+             </div>
+             <div style="width: 40px;height: 40px; position: fixed; right: 0; top: 0; padding: 5px;">
+                <a href="story.html"> <img src="team1.jpg" class="img-fluid rounded-circle"  style="border: 2px solid rgb(231, 61, 194);"></a> 
+                  <a href="home.html" style="text-decoration: none;"><div style="width :150px; height: 10px; ">Leo</div></a>
+            </div>
+         </div>
+        
+       <center><h1 ><i>wellcome to Instagram<br>You are new here</i></h1></center> 
+    </section>
+    <!--section for posts-->
+    
+    <!--section for home and feed selector-->
+    <section class="sel-btn">
+        <div class="btn justify-content-center " style="width: 100%; display: inline-flex; padding: 20px;"> 
+            <a class="btn btn-outline-light  active" style="border-top-left-radius: 44%;"  href="feeds.html">feeds</a>
+            <a class="btn btn-outline-light " style="  border-top-right-radius: 44%" href="newuser.html">home</a>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="foot">
+        <div class="footer">
+            <center>&copycopyright</center>
+            <center>dev.adith2003@gmail</center>    
+        </div>
+    </footer>
+</body>
+</html>
